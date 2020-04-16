@@ -115,7 +115,7 @@ products_options = [
 app = dash.Dash(
     __name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}]
 )
-server = app.server
+#server = app.server
 
 
 # Create app layout
@@ -750,4 +750,4 @@ def create_fcf_daily(start_date, end_date):
 
 # Run app
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(host='0.0.0.0')
